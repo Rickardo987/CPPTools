@@ -1,0 +1,4 @@
+language = "cpp"
+entrypoint = "main.cpp"
+onBoot="echo Click run to begin."
+run = "clang++-7 -pthread -std=c++17 -o build/main main.cpp && build/main"
