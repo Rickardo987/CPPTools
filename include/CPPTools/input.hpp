@@ -205,7 +205,7 @@ namespace CPPTools::input {
     HANDLE           hStdin = GetStdHandle(STD_INPUT_HANDLE);
 
     if (hStdin == INVALID_HANDLE_VALUE) { // Ensure handle is valid
-      return '\0'                         // Error
+      return '\0';                        // Error
     }
 
     while (true) {
