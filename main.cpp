@@ -90,18 +90,7 @@ int main() {
   Note: Won't work on some more basic windows terminals. Should work universally on linux. Colors
   also appear differently on some systems, for example oarnge is sometimes yellow, idk.
   */
-  int newline = 0;
-  for (auto c : CPPTools::color::colors) {
-    std::cout << c << "Color! " << std::flush;
-    // Print newline every four colors
-    if (newline == 3) {
-      newline = 0;
-      std::cout << std::endl;
-    } else {
-      newline++;
-    }
-  }
-  std::cout << CPPTools::color::RESET;
+  std::cout << CPPTools::color::BLUE << "Color!" << CPPTools::color::RESET << std::endl;
 
 
   //! ADDITIONAL FEATURES - Print Bits
